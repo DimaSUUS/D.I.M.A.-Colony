@@ -1,0 +1,142 @@
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(100, 38px);
+}
+
+.cell {
+    width: 32px; /* Adjusted width */
+    height: 32px; /* Adjusted height */
+    border: 2px groove;
+    margin: 1px;
+}
+
+.water {
+    background-image: url('img/water.jpg');
+}
+
+.shallow-water {
+    background-image: url('img/shallow.jpg');
+}
+
+.sand {
+    background-image: url('img/sand.jpg');
+}
+
+.ground {
+    background-image: url('img/ground.jpg');
+}
+
+.grass {
+    background-image: url('img/grass.jpg');
+}
+
+.forest {
+    background-image: url('img/forest.jpg');
+}
+
+.coal {
+    background-image: url('img/coal.jpg');
+}
+
+.iron {
+    background-image: url('img/iron.jpg');
+}
+
+.oil {
+    background-image: url('img/oil.jpg');
+}
+
+.gold {
+    background-image: url('img/gold.jpg');
+}
+
+.sulfure {
+    background-image: url('img/sulfure.jpg');
+}
+
+.lake {
+    background-image: url('img/lake.jpg');
+}
+
+.button-panel {
+    display: flex;
+    justify-content: center;
+    background-color: dimgrey;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.button {
+    padding: 50vw 100vw;
+    margin: 5vw;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 2vw;
+    font-size: 30vw;
+}
+
+.button:active {
+    background-color: #2980b9; 
+    transition: background-color 0.5s; 
+}
+
+.round-button {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid black;
+    margin: 5px;
+    font-size: 2vw;
+}
+
+.selected {
+    border: 2px solid red;
+}
+
+.right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 12vw; /* Используем относительную ширину */
+    height: 100vh; /* Используем относительную высоту */
+    background-color: #f0f0f0;
+    padding: 2vw; /* Используем относительный отступ */
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* Используем относительные тени */
+    transition: all 0.3s; /* Добавляем плавный переход */
+}
+
+.time-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+#date-display {
+    font-size: 1.2vw; /* Используем относительный размер шрифта */
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.resource-display {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resource {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+
+.resource img {
+    width: 1vw; /* Используем относительный размер иконок */
+    height: 1vw;
+    margin-right: 1vw;
+    border: 2px solid black;
+}
