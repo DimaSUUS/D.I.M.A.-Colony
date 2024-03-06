@@ -130,3 +130,69 @@ cells.forEach(cell => {
         cell.classList.add('selected');
     });
 });
+
+const cityCellX = 49;
+const cityCellY = 49;
+
+function buildResidence() {
+    buildBuilding(cityCellX, cityCellY, 'residence', {
+        cost: 16000,
+        requiredPeople: 0,
+        buildTime: 7,
+        buildableOn: ['ground', 'sand', 'grass'],
+        lifespan: 10,
+        resourcesPerDay: {
+            consumed: 0,
+            produced: 0,
+            housingCapacity: 10
+        }
+    });
+}
+
+function buildWindmill() {
+    buildBuilding(cityCellX, cityCellY, 'windmill', {
+        cost: 23000,
+        requiredPeople: 10,
+        buildTime: 10,
+        buildableOn: ['ground', 'sand', 'grass', 'water', 'shallow-water'],
+        lifespan: 20,
+        resourcesPerDay: {
+            consumed: 0,
+            produced: 1,
+            housingCapacity: 0
+        },
+        seasonalEffect: {
+            summer: false,
+            autumn: true,
+            winter: true,
+            spring: true
+        }
+    });
+}
+
+function buildMine() {
+    buildBuilding(cityCellX, cityCellY, 'mine', {
+        cost: 32000,
+        requiredPeople: 28,
+        buildTime: 14,
+        buildableOn: ['iron'],
+        lifespan: 15,
+        resourcesPerDay: {
+            consumed: 1,
+            produced: 10,
+            housingCapacity: 0
+        },
+        seasonalEffect: {
+            summer: true,
+            autumn: false,
+            winter: false,
+            spring: false
+        }
+    });
+}
+
+function buildBuilding(x, y, type, specs) {
+    // Проверка наличия ресурсов и проверка доступности ячейки для строительства здания по его спецификациям
+    // Реализация постройки здания
+    // Обновление интерфейса и информации об острове
+}
