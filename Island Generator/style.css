@@ -140,3 +140,22 @@
     margin-right: 1vw;
     border: 2px solid black;
 }
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+}
+
+.building {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.building:hover {
+    background-color: lightblue;
+}
